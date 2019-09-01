@@ -80,6 +80,7 @@ input, select, textarea {
 
 	html {
 		box-sizing: border-box;
+		scroll-behavior: smooth;
 	}
 
 	*, *:before, *:after {
@@ -88,6 +89,7 @@ input, select, textarea {
 
 	body {
 		background: #2e3842;
+		scroll-behavior: smooth;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -2706,15 +2708,15 @@ input, select, textarea {
 		}
 
 		.spotlight:nth-child(1) {
-			background-color: rgba(0, 0, 0, 0.075);
+			background-color: rgba(0, 0, 0, 0);
 		}
 
 		.spotlight:nth-child(2) {
-			background-color: rgba(0, 0, 0, 0.15);
+			background-color: rgba(0, 0, 0, 0);
 		}
 
 		.spotlight:nth-child(3) {
-			background-color: rgba(0, 0, 0, 0.225);
+			background-color: rgba(0, 0, 0, 0);
 		}
 
 		.spotlight:nth-child(4) {
@@ -3457,7 +3459,6 @@ input, select, textarea {
 		-ms-transform: translateX(0);
 		transform: translateX(0);
 	}
-
 /* Header */
 
 	#header {
@@ -3481,7 +3482,6 @@ input, select, textarea {
 			-ms-transition: opacity 0.2s ease;
 			transition: opacity 0.2s ease;
 			height: inherit;
-			left: 1.25em;
 			line-height: inherit;
 			position: absolute;
 			top: 0;
@@ -3522,7 +3522,11 @@ input, select, textarea {
 					padding: 0;
 				}
 
-					#header nav > ul > li > a {
+					#header nav > ul > li >a {
+						-moz-transition: background-color .2s ease-in-out;
+						-webkit-transition: background-color .2s ease-in-out;
+						-ms-transition: background-color .2s ease-in-out;
+						transition: background-color .2s ease-in-out;
 						border: 0;
 						color: #fff;
 						display: block;
@@ -3580,6 +3584,8 @@ input, select, textarea {
 				pointer-events: none;
 				opacity: 0;
 			}
+
+	
 
 /* Banner */
 
