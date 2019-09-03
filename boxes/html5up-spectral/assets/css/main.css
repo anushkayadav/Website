@@ -1837,7 +1837,7 @@ input, select, textarea {
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		background-color: rgba(144, 144, 144, 0.25);
+		background-color: rgba(144, 144, 144, 0.45);
 		border-radius: 3px;
 		border: none;
 		color: inherit;
@@ -2834,6 +2834,19 @@ input, select, textarea {
 			color: #c8ece9;
 		}
 
+		.wrapper.style12 {
+			background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner5.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../../images/banner5.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner5.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner5.jpg");
+		background-attachment: fixed;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding-top: 0;
+			color: #c8ece9;
+		}
+
 		.wrapper.style1 {
 			background-color:#f05e24;
 			background-image: linear-gradient(to bottom right, #f05e24, #8a2c07);
@@ -2881,7 +2894,7 @@ input, select, textarea {
 			.wrapper.style1 input[type="email"],
 			.wrapper.style1 select,
 			.wrapper.style1 textarea {
-				background-color: rgba(255, 255, 255, 0.075);
+				background-color: rgba(255, 255, 255, 0.2);
 			}
 
 			.wrapper.style1 select {
@@ -2942,7 +2955,7 @@ input, select, textarea {
 			}
 
 				.wrapper.style1 table tbody tr:nth-child(2n + 1) {
-					background-color: rgba(255, 255, 255, 0.075);
+					background-color: rgba(255, 255, 255, 0.09);
 				}
 
 			.wrapper.style1 table th {
